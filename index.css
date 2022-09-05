@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #2b2839;
+  color: white;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 1em;
+  background-color: #2b283a;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper h2 {
+  color: limegreen;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+input[type="text"] {
+  max-width: 100%;
+  padding: 0.7em;
+  margin: 0.5em 0;
+  font-family: inherit;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid lightblue;
+}
+
+input[type="checkbox"] {
+  border: 1px solid lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.catogries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.computer,
+.fiction,
+.cooking {
+  margin: 0.2em 0;
+}
+
+.catogries h2 {
+  margin: 0.5em;
+}
+.catogries span {
+  color: white;
+}
+
+.btn {
+  margin-top: 1em;
+  width: 150px;
+  padding: 0.5em 1em;
+  background-color: white;
+  color: #404040;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.25s;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: rgb(230, 214, 214);
+}
+
+.info {
+  padding: 1em;
+}
+
+table {
+  width: 100%;
+  font-family: inherit;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
+
+th {
+  color: limegreen;
+}
+
+td {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.number {
+  color: lightgreen;
+}
+
+.delBtn {
+  padding: 0.5em 1em;
+  background-color: white;
+  color: #2b2839;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.25s;
+}
+
+.delBtn:hover {
+  color: white;
+  background-color: #2b2839;
+  border: 1px solid white;
+}
+
+.delBtn:focus {
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  #tableBody > p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  tr {
+    max-width: 100%;
+  }
+
+  .delBtn {
+    padding: 0.5em 1em;
+    font-weight: 700;
+    background-color: white;
+    color: #2b2839;
+  }
+}
